@@ -1,0 +1,15 @@
+H:\Projects\Lab20_Misyuro.Kirill_GarbageCollector\Lab20_Misyuro.Kirill_GarbageCollector\bin\Debug\net7.0\Lab20_Misyuro.Kirill_GarbageCollector.exe
+H:\Projects\Lab20_Misyuro.Kirill_GarbageCollector\Lab20_Misyuro.Kirill_GarbageCollector\bin\Debug\net7.0\Lab20_Misyuro.Kirill_GarbageCollector.deps.json
+H:\Projects\Lab20_Misyuro.Kirill_GarbageCollector\Lab20_Misyuro.Kirill_GarbageCollector\bin\Debug\net7.0\Lab20_Misyuro.Kirill_GarbageCollector.runtimeconfig.json
+H:\Projects\Lab20_Misyuro.Kirill_GarbageCollector\Lab20_Misyuro.Kirill_GarbageCollector\bin\Debug\net7.0\Lab20_Misyuro.Kirill_GarbageCollector.dll
+H:\Projects\Lab20_Misyuro.Kirill_GarbageCollector\Lab20_Misyuro.Kirill_GarbageCollector\bin\Debug\net7.0\Lab20_Misyuro.Kirill_GarbageCollector.pdb
+H:\Projects\Lab20_Misyuro.Kirill_GarbageCollector\Lab20_Misyuro.Kirill_GarbageCollector\obj\Debug\net7.0\Lab20_Misyuro.Kirill_GarbageCollector.csproj.AssemblyReference.cache
+H:\Projects\Lab20_Misyuro.Kirill_GarbageCollector\Lab20_Misyuro.Kirill_GarbageCollector\obj\Debug\net7.0\Lab20_Misyuro.Kirill_GarbageCollector.GeneratedMSBuildEditorConfig.editorconfig
+H:\Projects\Lab20_Misyuro.Kirill_GarbageCollector\Lab20_Misyuro.Kirill_GarbageCollector\obj\Debug\net7.0\Lab20_Misyuro.Kirill_GarbageCollector.AssemblyInfoInputs.cache
+H:\Projects\Lab20_Misyuro.Kirill_GarbageCollector\Lab20_Misyuro.Kirill_GarbageCollector\obj\Debug\net7.0\Lab20_Misyuro.Kirill_GarbageCollector.AssemblyInfo.cs
+H:\Projects\Lab20_Misyuro.Kirill_GarbageCollector\Lab20_Misyuro.Kirill_GarbageCollector\obj\Debug\net7.0\Lab20_Misyuro.Kirill_GarbageCollector.csproj.CoreCompileInputs.cache
+H:\Projects\Lab20_Misyuro.Kirill_GarbageCollector\Lab20_Misyuro.Kirill_GarbageCollector\obj\Debug\net7.0\Lab20_Misyuro.Kirill_GarbageCollector.dll
+H:\Projects\Lab20_Misyuro.Kirill_GarbageCollector\Lab20_Misyuro.Kirill_GarbageCollector\obj\Debug\net7.0\refint\Lab20_Misyuro.Kirill_GarbageCollector.dll
+H:\Projects\Lab20_Misyuro.Kirill_GarbageCollector\Lab20_Misyuro.Kirill_GarbageCollector\obj\Debug\net7.0\Lab20_Misyuro.Kirill_GarbageCollector.pdb
+H:\Projects\Lab20_Misyuro.Kirill_GarbageCollector\Lab20_Misyuro.Kirill_GarbageCollector\obj\Debug\net7.0\Lab20_Misyuro.Kirill_GarbageCollector.genruntimeconfig.cache
+H:\Projects\Lab20_Misyuro.Kirill_GarbageCollector\Lab20_Misyuro.Kirill_GarbageCollector\obj\Debug\net7.0\ref\Lab20_Misyuro.Kirill_GarbageCollector.dll
