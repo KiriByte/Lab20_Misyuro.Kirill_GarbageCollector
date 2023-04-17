@@ -6,27 +6,67 @@ Console.WriteLine("Hello, World!");
 
 string filePath = "values.json";
 
-var user = new User("Rupert", "Tanner");
 
-await WriteFile(user);
-var str = await ReadFile<User>();
-Console.WriteLine(str.name);
-Console.WriteLine(str.surname);
-
-async Task WriteFile<T>(T data)
+using (var filemanager = new JsonFileManager(filePath))
 {
-    
-    using (var stream = new FileStream(filePath, FileMode.Create, FileAccess.Write))
+    List<User> userList = new List<User>()
     {
-        await JsonSerializer.SerializeAsync(stream, data, new JsonSerializerOptions());
+        new User("John", "Doe"),
+        new User("Alice", "Smith"),
+        new User("Bob", "Johnson"),
+        new User("Emily", "Davis"),
+        new User("Michael", "Brown")
+    };
+    await filemanager.WriteJsonAsync(userList);
+    var obj = await filemanager.ReadJsonAsync<List<User>>();
+    foreach (var usr in obj)
+    {
+        Console.WriteLine($"{usr.name} {usr.surname}");
     }
 }
 
-async Task<T> ReadFile<T>()
+public class JsonFileManager : IDisposable
 {
-    using (var stream = new FileStream(filePath, FileMode.Open, FileAccess.Read))
+    private readonly string _filePath;
+    private FileStream _fileStream;
+
+    public JsonFileManager(string filePath)
     {
-        return await JsonSerializer.DeserializeAsync<T>(stream);
+        _filePath = filePath;
+        _fileStream = new FileStream(_filePath, FileMode.OpenOrCreate, FileAccess.ReadWrite);
+    }
+
+    public async Task WriteJsonAsync<T>(T data)
+    {
+        await _fileStream.FlushAsync();
+        _fileStream.Seek(0, SeekOrigin.Begin);
+        await JsonSerializer.SerializeAsync(_fileStream, data, data.GetType());
+    }
+
+    public async Task<T> ReadJsonAsync<T>()
+    {
+        await _fileStream.FlushAsync();
+        _fileStream.Seek(0, SeekOrigin.Begin);
+        return await JsonSerializer.DeserializeAsync<T>(_fileStream);
+    }
+
+    public void Dispose()
+    {
+        Dispose(true);
+        GC.SuppressFinalize(this);
+    }
+
+    protected virtual void Dispose(bool disposing)
+    {
+        if (disposing)
+        {
+            _fileStream.Dispose();
+        }
+    }
+
+    ~JsonFileManager()
+    {
+        Dispose(false);
     }
 }
 
